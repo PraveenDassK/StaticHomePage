@@ -1,0 +1,99 @@
+.header {
+  background-color: #121212;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 2%;
+}
+.header_routers {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 90%;
+  justify-content: center;
+}
+.each_routers:hover {
+  /* color: linear-gradient(to right,#7526F2,#C826F2); */
+  background: linear-gradient(to right, #7526f2, #c826f2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.each_routers {
+  padding: 3% 0%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active_route {
+  background: linear-gradient(to right, #7526f2, #c826f2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  border-bottom: 4px solid #7426f2;
+  padding: 3% 0%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header_button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  width: 25%;
+  justify-content: center;
+}
+.header_logo {
+  width: 20%;
+  align-items: center;
+  font-size: 30px;
+}
+.header_button-signup {
+  background: linear-gradient(to right, #7526f2, #c826f2);
+  border-radius: 16px;
+  padding: 3% 8%;
+  font-size: 20px;
+}
+.header_burgerMenu {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header_routers {
+    display: none;
+  }
+  .header_button-container {
+    display: none;
+  }
+  .header_burgerMenu {
+    display: flex;
+  }
+  .header {
+    background-color: #121212;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% ;
+  }
+}
+
+@media (min-width: 2300px) and (max-width: 3200px) {
+  .each_routers {
+    padding: 3% 0%;
+    font-size: 30px;
+  }
+  .header_logo {
+    width: 20%;
+    align-items: center;
+    font-size: 40px;
+  }
+  .active_route {
+    background: linear-gradient(to right, #7526f2, #c826f2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border-bottom: 6px solid #7426f2;
+    padding: 3% 0%;
+    font-size: 30px;
+  }
+}

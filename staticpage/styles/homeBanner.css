@@ -1,0 +1,252 @@
+/* styles for home banner components*/
+
+.banner {
+  background-image: url("../assests/homeBanner.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.banner-topImage {
+  background-image: url("../assests/homeBannerTop.png"),
+    url("../assests/homeBannerBottom.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  height: 100vh;
+  animation: expandAndShrink 20s ease-in-out infinite;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.banner-title {
+  color: #cac4d2;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.banner-subTitle {
+  color: #c2a9d9;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* style for signup components */
+.signup_container {
+  border: 1px solid;
+  border-right-color: #c826f2;
+  border-left-color: #7526f2;
+  border-top-color: #c826f2;
+  border-bottom-color: #7526f2;
+  border-radius: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+.signup_container::after {
+  border: 1px solid;
+  border-image: linear-gradient(to right, #7526f2, #7526f2, #c826f2) 1 round;
+  border-radius: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+.signup_google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 2%;
+  background-color: #4285f4;
+  width: 100%;
+  border-radius: 15px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.form-class {
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column;
+}
+.input-class {
+  width: 100%;
+  border: 1px solid #3d3549;
+  background-color: transparent;
+  padding: 4%;
+  margin-top: 5%;
+  color: white;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.form_name-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.password-visible {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+}
+.time_zone {
+  color: #8971a0;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4%;
+}
+.signup_user-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 2%;
+  background: linear-gradient(to right, #7426f2, #9858fff7);
+  width: 100%;
+  border-radius: 15px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  opacity: 0.7;
+}
+.signup_creater-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 2%;
+  background: linear-gradient(to right, #7526f2, #c826f2);
+  width: 100%;
+  border-radius: 15px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.signup-orDiv {
+  border: 0.5px solid #2d2d2d;
+  width: 100%;
+  height: 0.5px;
+}
+.signup_orDiv-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3%;
+}
+.orText {
+  color: #484848;
+  font-weight: 500;
+  font-size: 16px;
+}
+.login_container {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8971a0;
+  margin-top: 3%;
+}
+.login_text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #7421f4;
+  cursor: pointer;
+}
+.homebanner_signUp {
+  width: 30%;
+}
+/* styles for mobile screen */
+@media (max-width: 767px) {
+  .banner-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 7%;
+    text-align: center;
+    padding-top: 15%;
+  }
+  .homebanner_signUp {
+    width: 100%;
+    padding: 10% 5%;
+  }
+  .banner-title {
+    color: #cac4d2;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .banner-subTitle {
+    color: #c2a9d9;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  .banner-topImage {
+    background-image: url("../assests/MobileTopBanner.png"),
+      url("../assests/MobileBottomBanner.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top, center bottom;
+    background-size: contain;
+    height: auto;
+    animation: none;
+  }
+  .password-visible {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+  }
+  .time_zone {
+    color: #8971a0;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 4%;
+    text-align: left;
+  }
+  .login_container {
+    font-weight: 400;
+    font-size: 16px;
+    color: #8971a0;
+    margin-top: 3%;
+    text-align: left;
+  }
+  .login_text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #7421f4;
+    cursor: pointer;
+  }
+  .banner {
+    background-image: url("../assests/homeBanner.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
+}
+
+/* 
+Animation for home banner
+
+ */
+@keyframes expandAndShrink {
+  0%,
+  100% {
+    background-size: 50% 30%;
+  }
+  50% {
+    background-size: 100% 55%;
+  }
+  75% {
+    background-size: 70% 40%;
+  }
+}
