@@ -1,0 +1,81 @@
+.bubble_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../assests/BubblesLeft.png"),
+    url("../assests/BubblesRight.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  background-size: calc(50%);
+  margin: 3%;
+  color: #cac4d2;
+  text-align: center;
+}
+.join-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 2%;
+  background: linear-gradient(to right, #b126f2, #7700d4);
+  width: 100%;
+  border-radius: 15px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.button_container {
+  width: 13%;
+}
+.bubble_title {
+  font-weight: 600;
+  font-size: 50px;
+}
+.bubble_subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  color: #89759cb2;
+}
+@media (min-width: 1900px) and (max-width: 3000px) {
+  .bubble_title {
+    font-weight: 600;
+    font-size: 75px;
+  }
+  .bubble_subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: #89759cb2;
+  }
+  .bubble_container {
+    height: 80vh;
+  }
+  .join-button{
+    padding: 4% 4%;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 767px) {
+    .button_container {
+        width: 80%;
+        margin-top: 5%;
+      }
+      .bubble_title {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .bubble_subtitle {
+        font-weight: 400;
+        font-size: 10px;
+        color: #89759cb2;
+      }
+      .bubble_container {
+        height: 400px;
+        gap: 5px;
+        padding-top:15%;
+        background-size: contain;
+      }
+}

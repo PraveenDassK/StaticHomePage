@@ -57,7 +57,13 @@ const Header = () => {
         <button className="header_button-signup">Sign up</button>
       </div>
       <div className="header_burgerMenu">
-        <Image src={BurgerMenu} width={30} height={30} priority={false} />
+        <Image
+          src={BurgerMenu}
+          width={30}
+          height={30}
+          priority={false}
+          alt="burgermenu"
+        />
       </div>
     </header>
   );

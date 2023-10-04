@@ -5,7 +5,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .banner-topImage {
   background-image: url("../assests/homeBannerTop.png"),
@@ -231,6 +231,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
+  }
+}
+
+/* style for large screens */
+@media (min-width: 1900px) and (max-width: 3000px) {
+  .banner-title {
+    
+    font-size: 5rem;
+  }
+  .banner-subTitle {
+    color: #c2a9d9;
+    font-weight: 400;
+    font-size: 1.6rem;
   }
 }
 
