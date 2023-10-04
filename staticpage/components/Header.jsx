@@ -4,9 +4,9 @@ import "../styles/header.css";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import BurgerMenu from "../assests/Burgermenu.png";
+import ExpandMore from "../assests/expand.png";
 const Header = () => {
   const pathname = usePathname();
-  console.log(pathname, "this is pathName");
   const routerArray = [
     {
       name: "Home",
@@ -29,7 +29,7 @@ const Header = () => {
       route: "/afflicate",
     },
     {
-      name: "Programs ",
+      name: "Programs",
       route: "/programs",
     },
   ];
@@ -41,14 +41,31 @@ const Header = () => {
       <div className="header_routers">
         {routerArray?.map((eachRoute, index) => {
           return (
-            <span
-              className={`${
-                pathname === eachRoute.route ? "active_route" : "each_routers"
-              }`}
-              key={index}
-            >
-              {eachRoute?.name}
-            </span>
+            <>
+              {eachRoute.name !== "Programs" ? (
+                <span
+                  className={`${
+                    pathname === eachRoute.route
+                      ? "active_route"
+                      : "each_routers"
+                  }`}
+                  key={index}
+                >
+                  {eachRoute?.name}
+                </span>
+              ) : (
+                <span
+                  className={`${
+                    pathname === eachRoute.route
+                      ? "active_route"
+                      : "program_route"
+                  }`}
+                  key={index}
+                >
+                  Programs <Image src={ExpandMore} alt="expandImage" />
+                </span>
+              )}
+            </>
           );
         })}
       </div>

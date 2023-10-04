@@ -27,6 +27,21 @@
   font-size: 20px;
   cursor: pointer;
 }
+.program_route {
+  padding: 3% 0%;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  color: #c6c6c6;
+}
+.program_route:hover {
+  background: linear-gradient(to right, #7526f2, #c826f2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
 .active_route {
   background: linear-gradient(to right, #7526f2, #c826f2);
@@ -61,6 +76,9 @@
 }
 @media (max-width: 767px) {
   .header_routers {
+    display: none;
+  }
+  .program_route {
     display: none;
   }
   .header_button-container {

@@ -14,13 +14,16 @@
   text-align: center;
 }
 .linear_text {
-    display: inline;
+  display: inline;
   background: linear-gradient(to right, #7526f2, #c826f2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .connection_subText {
-  display: flex;
+  display: block;
   align-items: center;
 }
 @media (max-width: 773px) {
@@ -38,5 +41,11 @@
     background-position: center;
     color: #cac4d2;
     text-align: center;
+  }
+  .connection_subText {
+    padding: 0% 15%;
+  }
+  .linear_text {
+    font-size: 20px;
   }
 }

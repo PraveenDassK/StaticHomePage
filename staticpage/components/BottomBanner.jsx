@@ -1,10 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import BottomBannerImage from "../assests/BottomBanner.png";
+import "../styles/footer.css";
 const BottomBanner = () => {
   return (
-    <div style={{ width: "100%", position: "relative" }}>
-      <Image priority={false} alt="bottombanner" src={BottomBannerImage} fill />
+    <div className="bottom_banner_container">
+      <Image
+        priority={false}
+        alt="bottombanner"
+        src={BottomBannerImage}
+        fill
+        quality={100}
+      />
     </div>
   );
 };

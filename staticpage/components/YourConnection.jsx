@@ -9,8 +9,8 @@ const YourConnection = () => {
         Join Our Affiliate Program
       </div>
       <div className="bubble_subtitle connection_subText">
-        Join now and get 7.5% commission on
-        all creator referrals for the entire year.
+        Join now and get <span className="linear_text "> 7.5% </span> commission
+        on all creator referrals for the entire year.
       </div>
       <div className="button_container">
         <button className="join-button">Earn Now</button>
