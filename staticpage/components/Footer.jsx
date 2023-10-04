@@ -64,7 +64,7 @@ const Footer = () => {
       <div className="footer_category">
         {footerData.map((eachFooter, index) => {
           return (
-            <div key={index}>
+            <div key={index} style={{ width: "100%" }}>
               <div className="footer_catergory-title">{eachFooter?.title}</div>
               {eachFooter?.lists?.map((eachCategory, i) => {
                 return (
