@@ -1,0 +1,42 @@
+.connection_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 500px;
+  width: 100%;
+  background-image: url("../assests/Emojis.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: #cac4d2;
+  text-align: center;
+}
+.linear_text {
+    display: inline;
+  background: linear-gradient(to right, #7526f2, #c826f2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.connection_subText {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 773px) {
+  .connection_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    width: 100%;
+    background-image: url("../assests/MobileEmoji.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #cac4d2;
+    text-align: center;
+  }
+}
