@@ -3,7 +3,7 @@ import "../styles/yourCraft.css";
 import Card from "./Card";
 import LeftCardImage from "../assests/LeftCardImage.png";
 import RightCardImage from "../assests/RightCardImage.png";
-import SaveTime from "../assests/SaveTime.png";
+import SaveTime from "../assests/Savetime.png";
 import Supportive from "../assests/Supportive.png";
 import Prizes from "../assests/prizes.png";
 const YourCraft = () => {
@@ -50,11 +50,11 @@ const YourCraft = () => {
     },
   ];
   return (
-    <div className="craft_container">
-      <div className="craft_title">
-        <span className="elevate_text">Elevate</span> Your Craft
+    <div className='craft_container'>
+      <div className='craft_title'>
+        <span className='elevate_text'>Elevate</span> Your Craft
       </div>
-      <div className="craft_topCards">
+      <div className='craft_topCards'>
         {data?.map((eachValue, index) => {
           return (
             <div key={index}>
@@ -69,7 +69,7 @@ const YourCraft = () => {
           );
         })}
       </div>
-      <div className="craft_bottomCards">
+      <div className='craft_bottomCards'>
         {bottomCardData.map((eachCard, i) => {
           return (
             <div key={i}>
