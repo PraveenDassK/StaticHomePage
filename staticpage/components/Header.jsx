@@ -57,23 +57,21 @@ const Header = () => {
     },
   ];
   return (
-    <header className="header">
-      <div className="header_logo">
+    <div className='header'>
+      <div className='header_logo'>
         <h1>LOGO</h1>
       </div>
-      <div className="header_routers">
+      <div className='header_routers'>
         {routerArray?.map((eachRoute, index) => {
           return (
-            <>
+            <React.Fragment key={index}>
               {eachRoute.name !== "Programs" ? (
                 <span
                   className={`${
                     pathname === eachRoute.route
                       ? "active_route"
                       : "each_routers"
-                  }`}
-                  key={index}
-                >
+                  }`}>
                   {eachRoute?.name}
                 </span>
               ) : (
@@ -83,21 +81,19 @@ const Header = () => {
                       ? "active_route"
                       : "program_route"
                   }`}
-                  key={index}
                   onClick={() => setIsVisible(true)}
-                  ref={excludedElementRef}
-                >
-                  Programs <Image src={ExpandMore} alt="expandImage" />
+                  ref={excludedElementRef}>
+                  Programs <Image src={ExpandMore} alt='expandImage' />
                 </span>
               )}
-            </>
+            </React.Fragment>
           );
         })}
       </div>
       {/* Program Modal */}
       {isVisible ? (
-        <div className="header_modal" onClick={() => setIsVisible(false)}>
-          <ul className="custom_list">
+        <div className='header_modal' onClick={() => setIsVisible(false)}>
+          <ul className='custom_list'>
             <li>Agency</li>
             <li>Ambassador</li>
             <li>partners</li>
@@ -105,20 +101,20 @@ const Header = () => {
         </div>
       ) : null}
 
-      <div className="header_button-container">
-        <button className="each_routers">Login</button>
-        <button className="header_button-signup">Sign up</button>
+      <div className='header_button-container'>
+        <button className='each_routers'>Login</button>
+        <button className='header_button-signup'>Sign up</button>
       </div>
-      <div className="header_burgerMenu">
+      <div className='header_burgerMenu'>
         <Image
           src={BurgerMenu}
           width={30}
           height={30}
           priority={false}
-          alt="burgermenu"
+          alt='burgermenu'
         />
       </div>
-    </header>
+    </div>
   );
 };
 

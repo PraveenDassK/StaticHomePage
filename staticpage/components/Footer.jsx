@@ -59,17 +59,17 @@ const Footer = () => {
     { Icon: InstagramIcon },
   ];
   return (
-    <div className="footer_container">
-      <div className="footer_logo">lOGO</div>
-      <div className="footer_category">
+    <div className='footer_container'>
+      <div className='footer_logo'>lOGO</div>
+      <div className='footer_category'>
         {footerData.map((eachFooter, index) => {
           return (
             <div key={index} style={{ width: "100%" }}>
-              <div className="footer_catergory-title">{eachFooter?.title}</div>
+              <div className='footer_catergory-title'>{eachFooter?.title}</div>
               {eachFooter?.lists?.map((eachCategory, i) => {
                 return (
                   <ol key={i}>
-                    <li className="footer_category-subtitle">
+                    <li className='footer_category-subtitle'>
                       {eachCategory?.subTitle}
                     </li>
                   </ol>
@@ -80,14 +80,14 @@ const Footer = () => {
         })}
       </div>
       <div>
-        <div className="footer_catergory-title"> Follow us</div>
-        <div className="footer_socialMedia">
+        <div className='footer_catergory-title'> Follow us</div>
+        <div className='footer_socialMedia'>
           {socialLinks.map((eachIcons, index) => {
             return (
-              <div>
+              <div key={index}>
                 <Image
                   src={eachIcons?.Icon}
-                  alt="socialmedia"
+                  alt='socialmedia'
                   height={30}
                   width={30}
                   priority={false}
